@@ -1,0 +1,50 @@
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center_vertical|center|center_horizontal"
+        android:padding="15dp">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Title"
+            android:id="@+id/AlertTitle" />
+
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp">
+
+            <Button
+                style="@style/btnStyleOrange"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Stop"
+                android:id="@+id/StopButton"
+                android:layout_margin="5dp"
+                android:onClick="StopButtonClicked" />
+
+            <Button
+                style="@style/btnStyleOrange"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:text="Snooze"
+                android:id="@+id/SnoozeButton"
+                android:layout_margin="5dp"
+                android:onClick="SnoozeButtonClicked" />
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>

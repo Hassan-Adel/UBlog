@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Blog</string>
+
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_tabs">tabs</string>
+    <string name="title_activity_adding">Adding</string>
+    <string name="title_activity_custom_dialog">CustomDialog</string>
+    <string name="title_activity_add_blog">AddBlog</string>
+    <string name="title_activity_add_alert">AddAlert</string>
+    <string name="title_activity_edit_blog">EditBlog</string>
+    <string name="title_activity_edit_alert">EditAlert</string>
+    <string name="title_activity_edit_alert_again">EditAlertAgain</string>
+    <string name="title_activity_add_alert_again">AddAlertAgain</string>
+    <string name="title_activity_show_dialog">ShowDialog</string>
+    <string name="Intro_String">What are you waiting for connect with people, express yourself, and discover more about all the things you love. Get breaking news. Stay informed with the local and global news that matters to you most.\n </string>
+    <string name="title_activity_test">test</string>
+    <string name="title_activity_public_tabs">PublicTabs</string>
+    <string name="title_activity_public_sign_up">PublicSignUp</string>
+    <string name="title_activity_public_log_in">PublicLogIn</string>
+    <string name="title_activity_public_user_home">PublicUserHome</string>
+    <string name="title_activity_custom_dialog_public">CustomDialogPublic</string>
+    <string name="title_activity_public_add_post">PublicAddPost</string>
+    <string name="title_activity_public_add_friend">PublicAddFriend</string>
+    <string name="title_activity_public_add_image">PublicAddImage</string>
+    <string name="title_activity_public_forgot_password">PublicForgotPassword</string>
+    <string name="title_activity_public_signin_sign_up">PublicSigninSignUp</string>
+    <string name="title_activity_public_friends">PublicFriends</string>
+    <string name="title_activity_public_friend_reqeusts">PublicFriendReqeusts</string>
+    <string name="title_activity_public_reported_users">PublicReportedUsers</string>
+    <string name="ForgotPasswordString"><u>Forgot Password?</u></string>
+
+</resources>

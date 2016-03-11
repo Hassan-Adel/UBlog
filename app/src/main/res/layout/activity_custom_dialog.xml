@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@android:color/transparent"
+    >
+<!--
+    <TextView
+        android:id="@+id/txt_dia"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_margin="10dp"
+        android:text="What do you want to add ?"
+        android:textColor="#ff000000"
+        android:textSize="25dp"
+        android:textStyle="bold"/>
+-->
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:background="@android:color/transparent"
+        >
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/AddBlog"
+            android:padding="10dp"
+
+            android:layout_margin="25dp"
+            android:background="@drawable/addnote"
+            android:onClick="AddBlogClicked" />
+
+
+        <ImageButton
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:id="@+id/AddAlert"
+            android:padding="10dp"
+
+            android:layout_margin="25dp"
+            android:background="@drawable/add3"
+            android:onClick="AddAlertClicked" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="180dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@android:color/transparent"
+    tools:context="com.example.pc.blog.CustomDialog">
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:background="@android:color/transparent"
+        >
+
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/TakePhoto"
+            android:padding="10dp"
+
+            android:background="@drawable/takephoto"
+            android:onClick="TakePhotoClicked" />
+
+
+        <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="50dp"
+            android:id="@+id/ChoosePhoto"
+            android:padding="10dp"
+
+            android:background="@drawable/choosephoto"
+            android:onClick="ChoosePhotoClicked" />
+    </LinearLayout>
+
+</LinearLayout>

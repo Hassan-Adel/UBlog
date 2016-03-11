@@ -1,0 +1,92 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:background="@drawable/university_background"
+    >
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:gravity="center_vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true">
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="23sp"
+                android:textColor="#fff"
+                android:text="Save notes , photos and your alerts too ."
+                android:id="@+id/textView3"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:clickable="true"
+                android:onClick="testingReportsClicked"/>
+
+            <Button
+                style="@style/btnStyleLessRoundGreen"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Private Blog"
+                android:id="@+id/ButtonPublic"
+                android:onClick="privateclicked"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+
+        <!--//////////////////////////////////////////////////////////////-->
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="330dp"
+            android:layout_height="200dp"
+            android:gravity="center_vertical"
+            android:layout_gravity="center_horizontal"
+
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="25dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <TextView
+                android:layout_width="300dp"
+                android:layout_height="wrap_content"
+                android:textSize="22sp"
+                android:textColor="#fff"
+                android:text="Share notes and photos with your friends ."
+                android:id="@+id/textView1"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:layout_marginTop="20dp" />
+
+
+            <Button
+                style="@style/btnStyleLessRoundGreen"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Public Blog"
+                android:onClick="publicclicked"
+                android:id="@+id/ButtonPrivate"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="20dp" />
+        </LinearLayout>
+
+    </LinearLayout>
+</RelativeLayout>

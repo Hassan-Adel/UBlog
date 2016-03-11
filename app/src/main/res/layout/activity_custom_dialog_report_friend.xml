@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="355dp"
+    android:layout_height="300dp"
+    android:orientation="vertical"
+    android:gravity="center_vertical|center_horizontal"
+    android:background="@android:color/transparent"
+    tools:context="com.example.pc.blog.PublicAddFriend">
+
+    <!--android:background="@android:color/transparent"-->
+
+    <RelativeLayout
+        android:layout_width="335dp"
+        android:layout_height="280dp"
+        android:background="@drawable/reportdialogbackground"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="10dp">
+       <ImageButton
+            android:layout_width="350dp"
+            android:layout_height="40dp"
+            android:id="@+id/ReportFriendButton"
+            android:padding="10dp"
+            android:background="@drawable/reportfriendbuttonbackground"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true" />
+
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="280dp"
+            android:layout_gravity="center_vertical|center_horizontal"
+            android:gravity="center_vertical">
+
+            <!--
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#000"
+                android:textAppearance="?android:attr/textAppearanceMedium"
+                android:text="Are you sure you want to delete "
+                android:id="@+id/TextDeleteFriendDialog"
+                android:layout_above="@+id/AddFriend"
+                android:layout_centerHorizontal="true"
+
+                android:gravity="center_horizontal" />
+            android:layout_gravity="center_horizontal"
+            -->
+            <RadioGroup
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/radioGroup">
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="23sp"
+                    style="@style/RadioButton"
+                    android:text="  This is a fake acount"
+                    android:id="@+id/radioButton1"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="23sp"
+                    style="@style/RadioButton"
+                    android:text="  Post impropriate content"
+                    android:id="@+id/radioButton2"
+                    android:layout_margin="10dp" />
+
+                <RadioButton
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#000"
+                    android:textSize="23sp"
+                    style="@style/RadioButton"
+                    android:text="  Post wrong data"
+                    android:id="@+id/radioButton3"
+                    android:layout_margin="10dp" />
+
+            </RadioGroup>
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+
+
+</LinearLayout>

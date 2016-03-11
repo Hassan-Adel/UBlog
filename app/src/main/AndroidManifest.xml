@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.pc.blog" >
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <android:uses-permission
+        android:name="android.permission.WRITE_EXTERNAL_STORAGE"
+        android:maxSdkVersion="18" />
+    <android:uses-permission android:name="android.permission.READ_PHONE_STATE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name" >
+        <activity
+            android:name=".Splash"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <receiver
+            android:name=".AlarmReceiver"
+            android:process=":remote" />
+
+        <activity
+            android:name=".privatepublic"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".tabs"
+            android:label="@string/title_activity_tabs" >
+        </activity>
+        <activity
+            android:name=".TabActivity1"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".TabActivity2"
+            android:label="@string/app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.default" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".CustomDialog"
+            android:label="@string/title_activity_custom_dialog" >
+        </activity>
+        <activity
+            android:name=".AddBlog"
+            android:label="@string/title_activity_add_blog" >
+        </activity>
+        <activity
+            android:name=".EditBlog"
+            android:label="@string/title_activity_edit_blog" >
+        </activity>
+        <activity
+            android:name=".EditAlertAgain"
+            android:label="@string/title_activity_edit_alert_again" >
+        </activity>
+        <activity
+            android:name=".AddAlertAgain"
+            android:label="@string/title_activity_add_alert_again" >
+        </activity>
+        <activity
+            android:name=".ShowDialog"
+            android:label="@string/title_activity_show_dialog"
+            android:theme="@android:style/Theme.Dialog" >
+        </activity>
+        <activity
+            android:name=".PublicSignUp"
+            android:label="@string/title_activity_public_sign_up" >
+        </activity>
+        <activity
+            android:name=".PublicTabs"
+            android:label="@string/title_activity_public_tabs" >
+        </activity>
+        <activity
+            android:name=".PublicLogIn"
+            android:label="@string/title_activity_public_log_in" >
+        </activity>
+        <activity
+            android:name=".PublicAddPost"
+            android:label="@string/title_activity_public_add_post" >
+        </activity>
+        <activity
+            android:name=".PublicAddFriend"
+            android:label="@string/title_activity_public_add_friend" >
+        </activity>
+        <activity
+            android:name=".PublicAddImage"
+            android:label="@string/title_activity_public_add_image" >
+        </activity>
+        <activity
+            android:name=".PublicForgotPassword"
+            android:label="@string/title_activity_public_forgot_password" >
+        </activity>
+        <activity
+            android:name=".PublicSigninSignUp"
+            android:label="@string/title_activity_public_signin_sign_up" >
+        </activity>
+
+
+        <activity
+            android:name=".HomeActivity"
+            android:label="app_name" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".SimpleImageActivity"
+            android:label="ac_name_image_list" />
+
+
+    </application>
+
+</manifest>

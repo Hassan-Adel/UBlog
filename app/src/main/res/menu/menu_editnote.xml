@@ -1,0 +1,9 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/tools">
+    <item android:id="@+id/new_game"
+        android:icon="@drawable/delete"
+        android:showAsAction="ifRoom"
+        android:title="Delete"
+        />
+
+</menu>

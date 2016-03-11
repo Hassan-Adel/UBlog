@@ -1,0 +1,199 @@
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/dialog_kind"
+        android:layout_width="350dp"
+        android:layout_height="530dp"
+        android:layout_centerHorizontal="true"
+        android:background="@android:color/transparent"
+        android:layout_gravity="center_horizontal"
+        tools:context="com.example.pc.blog.PublicSignUp"
+        >
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/TextFirstName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:background="@drawable/textfieldstyle"
+                android:ems="10"
+
+                android:hint="First Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/TextLastName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextFirstName"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:background="@drawable/textfieldstyle"
+                android:hint="Last Name"
+                android:inputType="textPersonName"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <RelativeLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/TextLastName"
+                android:layout_centerHorizontal="true"
+
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/gender_button"
+                    android:layout_width="15dp"
+                    android:layout_height="13dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="25dp"
+                    android:layout_marginTop="23dp"
+                    android:background="@drawable/open_gender" />
+
+
+                <EditText
+                    android:id="@+id/TextGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_gravity="left"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/textfieldstyle"
+                    android:editable="false"
+                    android:enabled="false"
+                    android:hint="Gender"
+                    android:inputType="text"
+                    android:paddingLeft="10dp"
+                    android:textColor="#ffffff" />
+
+
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/TextPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/linearLayout"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:background="@drawable/textfieldstyle"
+                android:hint="Password"
+                android:inputType="textPassword"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/TextEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextPassword"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:background="@drawable/textfieldstyle"
+                android:hint="E-mail"
+                android:inputType="textEmailAddress"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/TextAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextEmail"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Address"
+                android:inputType="text"
+                android:background="@drawable/textfieldstyle"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <EditText
+                android:id="@+id/TextCollege"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextAddress"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Collage"
+                android:inputType="text"
+                android:background="@drawable/textfieldstyle"
+                android:paddingLeft="10dp" />
+
+            <EditText
+                android:id="@+id/TextStudyYear"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextCollege"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="10dp"
+                android:ems="10"
+                android:hint="Study year"
+                android:inputType="phone"
+                android:background="@drawable/textfieldstyle"
+                android:paddingLeft="10dp"
+                android:textColor="#ffffff" />
+
+            <Button
+                style="@style/btnStyleClassic"
+                android:id="@+id/SignUpButton"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/TextStudyYear"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center_horizontal"
+                android:text="Sign up"
+                android:textAllCaps="false"
+                android:textStyle="normal" />
+
+            <Button
+                android:id="@+id/male_gender"
+                android:layout_width="88dp"
+                android:layout_height="35dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="25dp"
+                android:layout_marginTop="158dp"
+                android:background="@drawable/border_button"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Male"
+                android:textAllCaps="false"
+                android:textColor="#ff2968d9" />
+
+            <Button
+                android:id="@+id/female_gender"
+                android:layout_width="88dp"
+                android:layout_height="35dp"
+                android:layout_alignLeft="@+id/male_gender"
+                android:layout_alignStart="@+id/male_gender"
+                android:layout_below="@+id/male_gender"
+                android:layout_marginTop="-2dp"
+                android:background="@drawable/border_button"
+                android:gravity="left"
+                android:paddingLeft="5dp"
+                android:paddingTop="5dp"
+                android:text="Female"
+                android:textAllCaps="false"
+                android:textColor="#ff2968d9" />
+
+        </RelativeLayout>
+    </ScrollView>
